@@ -1,8 +1,8 @@
 function deleteMe() {
-    document.getElementById('myresult').value.style.display = 'none'
-}
-function calculator() {
 
+}
+function calculator(newValue) {
+    document.getElementById('myresult').value = newValue
 }
 function answer() {
 
