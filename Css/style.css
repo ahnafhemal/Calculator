@@ -1,19 +1,18 @@
+*,
 *::before,
 *::after {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Gotham Rounded, sans-serif;
     font-weight: normal;
 }
 
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
-
 .calculator-grid {
-
     display: grid;
     justify-content: center;
     align-content: center;
@@ -28,22 +27,18 @@ body {
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .75);
-
 }
-
 
 .calculator-grid>button:hover {
     background-color: rgba(255, 255, 255, .9);
 }
 
-
 .span-two {
     grid-column: span 2;
 }
 
-
 .output {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     background-color: rgba(0, 0, 0, .75);
     display: flex;
     align-items: flex-end;
@@ -53,7 +48,6 @@ body {
     word-wrap: break-word;
     word-break: break-all;
 }
-
 
 .output .previous-operand {
     color: rgba(255, 255, 255, .75);
